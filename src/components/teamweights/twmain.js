@@ -11,7 +11,8 @@ class TWMain extends Component{
 
   componentDidMount(){
       //fetch("http://localhost:8000/getweights", {
-      fetch("http://localhost:8000/getemployees", {
+      //fetch("http://localhost:8000/getemployees", {
+      fetch("https://infinite-coast-77526.herokuapp.com/getemployees", {
         method: 'GET',
         headers:new Headers({
           'Authorization': 'Bearer' + localStorage.getItem('token'),
