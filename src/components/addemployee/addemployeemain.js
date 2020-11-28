@@ -17,8 +17,9 @@ class AddEmployeeMain extends Component{
 
   handleSubmit(event) {
     const self = this;
-      event.preventDefault();
-      fetch('http://localhost:8000/addnewemployee', {
+      event.preventDefault();    
+    //fetch('http://localhost:8000/addnewemployee', {
+      fetch('https://infinite-coast-77526.herokuapp.com/addnewemployee', {
           method:'POST',
           headers: {
             'Accept':'application/json',
