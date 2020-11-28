@@ -19,7 +19,7 @@ class LoginMain extends Component{
   handleSubmit(event) {
     const self = this;
       event.preventDefault();
-      fetch('http://localhost:8000/loginuser', {
+      fetch('https://infinite-coast-77526.herokuapp.com/loginuser', {
           method:'POST',
           headers: {
             'Accept':'application/json',
