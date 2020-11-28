@@ -39,7 +39,7 @@ class Main extends Component{
   handleSubmit(event) {
     const self = this;
     event.preventDefault();
-    fetch('http://localhost:8000/addnewweight', {
+    fetch('https://infinite-coast-77526.herokuapp.com/addnewweight', {
       method:'PUT',
       headers: {
         'Accept':'application/json',
